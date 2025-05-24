@@ -1,0 +1,33 @@
+<script>
+// 여기에 위에서 설명드린 자바스크립트 코드를 붙여넣으세요.
+const randomNumber = Math.floor(Math.random() * 10) + 1;
+let userGuess = 0;
+
+console.log("1부터 10까지 숫자 중에 하나를 맞혀보세요!");
+
+while (userGuess !== randomNumber) {
+  const input = prompt("숫자를 입력해주세요:");
+
+  if (input === null || input.trim() === "") {
+    console.log("게임이 취소되었습니다.");
+    break;
+  }
+
+  userGuess = parseInt(input);
+
+  if (isNaN(userGuess)) {
+    console.log("숫자를 입력해주세요.");
+    continue;
+  }
+
+  if (userGuess < randomNumber) {
+    console.log("더 높은 숫자예요!");
+  } else if (userGuess > randomNumber) {
+    console.log("더 낮은 숫자예요!");
+  }
+}
+
+if (userGuess === randomNumber) {
+  console.log(`축하합니다! 정답은 ${randomNumber}였습니다!`);
+}
+</script>

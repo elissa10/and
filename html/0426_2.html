@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>안녕하세요! 저는 이은선입니다.</h1>
+    <p>웹 개발에 관심이 많고, 여러분과 함께 성장하고 싶어요.</p>
+    <button id="greetBtn">인사하기</button>
+
+    <script>
+        const button = document.getElementById('greetBtn');
+        button.addEventListener('click', function() {
+            alert('안녕하세요! 만나서 반갑습니다.');
+        });
+    </script>
+
+</body>
+
+
+
+
+</html>
