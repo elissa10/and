@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* 귀여운 배경색 */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+canvas {
+    background-color: #87ceeb; /* 하늘색 배경 */
+    display: block; /* 가운데 정렬을 위해 */
+    margin: 0 auto 10px auto;
+    border: 1px solid #000;
+}
+
+#scoreDisplay {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}

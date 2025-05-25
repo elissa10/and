@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden; /* 스크롤 방지 */
+}
+
+canvas {
+    border: 1px solid #000;
+    background-color: #bebebe; /* 하늘색 배경 */
+}
