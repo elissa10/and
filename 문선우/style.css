@@ -1,0 +1,13 @@
+/* body 스타일: 화면 중앙에 요소들을 배치 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+/* Canvas 스타일: 테두리와 배경색 지정 */
+canvas {
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+}
